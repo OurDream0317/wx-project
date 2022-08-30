@@ -1,0 +1,5 @@
+<!--pages/info/info.wxml-->
+<text>pages/info/info.wxml</text>
+
+<!--后退导航-->
+<button bindtap="goback">后退</button>

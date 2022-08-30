@@ -1,0 +1,24 @@
+<!--pages/navigator/navigator.wxml-->
+<text>pages/navigator/navigator.wxml</text>
+
+<!--声明式导航栏 跳转到tabBar
+url 表示要跳转的页面地址 必须以 / 开头
+open-type 表示跳转的方式 必须 switchTab
+-->
+<navigator url="/pages/home/home" open-type="switchTab">跳转到首页</navigator>
+
+<!--声明式导航栏 跳转到非tabBar
+url 表示要跳转的页面地址 必须以 / 开头
+open-type 表示跳转的方式 可选 navigate
+-->
+<navigator url="/pages/info/info" open-type="navigate">跳转到非tabBar页面</navigator>
+
+<!--编程式导航
+导航到tabBar页面
+-->
+<button bindtap="gotoMessage">跳转到资讯页面</button>
+
+<!--编程式导航
+导航到非tabBar页面
+-->
+<button bindtap="gotoInfo">跳转到info页面</button>
