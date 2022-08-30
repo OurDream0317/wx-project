@@ -12,11 +12,32 @@ Page({
       delta: 1,
     })
   },
+  showToast(){
+    wx.showToast({
+      title: '成功',
+      icon: 'success',
+      duration: 2000
+    })
+  },
+  showModel(){
+    wx.showModal({
+      title: '提示',
+      content: '这是一个模态弹窗',
+      editable: true,
+      success (res) {
+        console.log(res.content)
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
   },
 
   /**

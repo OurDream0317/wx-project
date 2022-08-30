@@ -3,3 +3,7 @@
 
 <!--后退导航-->
 <button bindtap="goback">后退</button>
+<!--消息提示框-->
+<button bindtap="showToast">消息提示框</button>
+<!--对话框-->
+<button bindtap="showModel">对话框</button>
