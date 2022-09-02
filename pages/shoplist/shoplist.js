@@ -39,10 +39,18 @@ Page({
        _limit: this.data.pageSize
      },
      success:(res) =>{
+      if(res.data.length == 0){
+        wx.showToast({
+          title: '无数据',
+          icon: 'success',
+          duration: 2000
+        })
+      }else{
       this.setData({
         shopList: [...this.data.shopList,...res.data],
         total: res.header['X-Total-Count'] - 0,
       })
+      }
      },
      complete:() =>{
        wx.hideLoading()
