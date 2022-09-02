@@ -7,8 +7,8 @@
     "pages/index/index",
     "pages/swiper/swiper",
     "pages/logs/logs",
-    "pages/info/info"
-   
+    "pages/info/info",
+    "pages/shoplist/shoplist"
   ],
   "window": {
     "backgroundTextStyle": "dark",

@@ -8,7 +8,11 @@ Page({
       swiperList : [],
       grideList : [],
   },
-
+  goShopPage(){
+    wx.navigateTo({
+      url: '/pages/shoplist/shoplist?id = 1',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -36,6 +40,7 @@ Page({
           this.setData({
             grideList : res.data
           })
+          console.log(res)
       }
     })
   },
