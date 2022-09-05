@@ -22,3 +22,12 @@ open-type 表示跳转的方式 可选 navigate
 导航到非tabBar页面
 -->
 <button bindtap="gotoInfo">跳转到info页面</button>
+
+<button bindtap="gotoHappy">大乐透</button>
+
+
+<view>---------------------------------------------------</view>
+
+<view></view>
+
+<my-test></my-test>

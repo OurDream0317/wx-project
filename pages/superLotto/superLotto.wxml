@@ -1,4 +1,4 @@
-<!--pages/mine/mine.wxml-->
+<!--pages/superLotto/superLotto.wxml-->
 <view class="container-text"><text class="num1">{{beginNumber}}</text></view>
 <view class="container-text"><text class="num2">{{endNumber}}</text></view>
 <button bindtap="getNumber">获取号码</button>

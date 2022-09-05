@@ -8,7 +8,8 @@
     "pages/swiper/swiper",
     "pages/logs/logs",
     "pages/info/info",
-    "pages/shoplist/shoplist"
+    "pages/shoplist/shoplist",
+    "pages/superLotto/superLotto"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -19,26 +20,28 @@
     "backgroundColor": "#efefef",
     "onReachBottomDistance": 50
   },
-
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "首页",
-      "iconPath": "/images/icon/home.png",
-      "selectedIconPath": "/images/icon/home-active.png"
-    },{
-      "pagePath": "pages/message/message",
-      "text": "资讯",
-      "iconPath": "/images/icon/message.png",
-      "selectedIconPath": "/images/icon/message-active.png"
-    },{
-      "pagePath": "pages/mine/mine",
-      "text": "我的",
-      "iconPath": "/images/icon/mine.png",
-      "selectedIconPath": "/images/icon/mine-active.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/icon/home.png",
+        "selectedIconPath": "/images/icon/home-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "资讯",
+        "iconPath": "/images/icon/message.png",
+        "selectedIconPath": "/images/icon/message-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/icon/mine.png",
+        "selectedIconPath": "/images/icon/mine-active.png"
+      }
+    ]
   },
-
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
