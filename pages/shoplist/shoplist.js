@@ -23,7 +23,7 @@ Page({
    this.getShopList()
   },
   
-  getShopList(){
+  getShopList(cb){
     if(this.data.flag){
       this.setData({
         flag: false
@@ -39,24 +39,17 @@ Page({
        _limit: this.data.pageSize
      },
      success:(res) =>{
-      if(res.data.length == 0){
-        wx.showToast({
-          title: '无数据',
-          icon: 'success',
-          duration: 2000
-        })
-      }else{
       this.setData({
         shopList: [...this.data.shopList,...res.data],
         total: res.header['X-Total-Count'] - 0,
       })
-      }
      },
      complete:() =>{
        wx.hideLoading()
        this.setData({
         flag: true
-      })
+      });
+      cb && cb()
      }
    })
   }
@@ -95,13 +88,28 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-
+    //需要设置关键数据
+    this.setData({
+      page: 1,
+      shopList: [],
+      total: 0,
+    })
+    //需要发起数据请求
+    this.getShopList(() => {
+      wx.stopPullDownRefresh()
+    });
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
+    if(this.data.page*this.data.pageSize >= this.data.total){
+      return wx.showToast({
+        title: '数据加载完毕',
+        icon: 'none'
+      })
+    }
     if(this.data.flag){
     this.setData({
       page: this.data.page + 1
