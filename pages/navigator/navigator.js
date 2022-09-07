@@ -5,19 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    count: 0,
+    newCount: 0
   },
-  gotoMessage(){
+  syncCount(e){
+    this.setData({
+      count: e.detail.value
+    })
+  },
+  getChild(){
+    const child = this.selectComponent(".customA");
+    this.setData({
+      newCount: child.data.count
+    })
+  },
+  gotoMessage() {
     wx.switchTab({
       url: '/pages/message/message',
     })
   },
-  gotoInfo(){
+  gotoInfo() {
     wx.navigateTo({
       url: '/pages/info/info',
     })
   },
-  gotoHappy(){
+  gotoHappy() {
     wx.switchTab({
       url: '/pages/home/home',
     })

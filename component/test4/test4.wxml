@@ -1,0 +1,13 @@
+<!--component/test4/test4.wxml-->
+<!--单个插槽-->
+<!-- <view>
+  <view>这是组件的内部结构</view>
+  <slot></slot>
+</view> -->
+
+<!--多个插槽-->
+<view>
+  <slot name="before"></slot>
+  <view>这是组件的内部结构</view>
+  <slot name="after"></slot>
+</view>

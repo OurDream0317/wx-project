@@ -13,7 +13,13 @@
 </view>
 
 <view class="img-box">
+<navigator url="/pages/index/index" open-type="navigate">
+   <image src="/images/1.jpeg" mode="widthFix"></image> 
+   <view class="tt">看一看</view>
+ </navigator>
+ <navigator url="/pages/index/index" open-type="navigate">
    <image src="/images/1.jpeg" mode="widthFix"></image>
-   <image src="/images/1.jpeg" mode="widthFix"></image>
+   <view class="tt">瞧一瞧</view>
+</navigator>
 </view>
 

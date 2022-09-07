@@ -1,0 +1,3 @@
+<!--component/test5/test5.wxml-->
+<text>子组件中，count的值是：{{count}}</text>
+<button style="background: chartreuse;" bindtap="addCount">+1</button>

@@ -18,7 +18,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    console.log("开始了！！！！")
+    wx.request({
+      url: 'https://www.tianqiapi.com/api/?version=v1&cityid=101020100&city=上海&ip=&callback=',
+      method: 'POST',
+      success:(res) =>{
+       console.log(res) 
+      }
+    })
   },
 
   /**
@@ -46,7 +53,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-
+  
   },
 
   /**

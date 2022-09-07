@@ -31,3 +31,37 @@ open-type 表示跳转的方式 可选 navigate
 <view></view>
 
 <my-test></my-test>
+
+<view>------------------</view>
+<!--单插槽-->
+<my-test4>
+  <view>这是通过插槽填充的内容</view>
+</my-test4>
+
+<!--多插槽-->
+<view>---------------</view>
+<my-test4>
+  <view slot="before">这是通过插槽填充的内容-before</view>
+  <view slot="after">~~~~~~~~~~~~</view>
+</my-test4>
+<view>---------------------------------------------------</view>
+
+<view>
+  <!-- 
+    1.属性绑定
+      用于父组件向子组件的指定属性设置数据，尽能设置JSON兼容的数据
+    2.事件绑定
+      用于子组件向父组件传递数据，可以传递任意数据
+    3.获取组件实例
+      父组件还可以通过this.selectComponent()获取子组件实例对象
+      这样就可以直接访问子组件的任意数据和方法
+   -->
+</view>
+<view style="color: brown;">父组件传值到子组件</view>
+<my-test5 count="{{count}}" bind:sync="syncCount" class="customA"></my-test5>
+<view>父组件中，count值是：{{count}}</view>
+<view style="color: brown;">子组件传值到父组件【通过事件】</view>
+
+<view style="color: brown;">获取组件实例</view>
+<button style="background: cornflowerblue;" bindtap="getChild">获取组件实例</button>
+<view>点击获取组件实例按钮，获取到的值：{{newCount}}</view>

@@ -45,5 +45,10 @@ swiper image {
 }
 
 .img-box image {
-  width: 45%;
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.tt{
+  text-align: center;
 }
