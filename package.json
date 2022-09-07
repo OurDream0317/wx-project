@@ -1,0 +1,23 @@
+{
+  "name": "wx-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OurDream0317/wx-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OurDream0317/wx-project/issues"
+  },
+  "homepage": "https://github.com/OurDream0317/wx-project#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.3.3"
+  }
+}

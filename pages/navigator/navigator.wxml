@@ -65,3 +65,10 @@ open-type 表示跳转的方式 可选 navigate
 <view style="color: brown;">获取组件实例</view>
 <button style="background: cornflowerblue;" bindtap="getChild">获取组件实例</button>
 <view>点击获取组件实例按钮，获取到的值：{{newCount}}</view>
+<view>---------------------------------------------------</view>
+
+<van-button type="default">默认按钮</van-button>
+<van-button type="primary">主要按钮</van-button>
+<van-button type="info">信息按钮</van-button>
+<van-button type="warning">警告按钮</van-button>
+<van-button type="danger">危险按钮</van-button>
