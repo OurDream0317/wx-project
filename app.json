@@ -21,6 +21,7 @@
     "onReachBottomDistance": 50
   },
   "tabBar": {
+    "custom": true,
     "list": [
       {
         "pagePath": "pages/home/home",
@@ -48,6 +49,8 @@
     "my-test4": "/component/test4/test4",
     "my-test5": "/component/test5/test5",
     "van-button": "@vant/weapp/button/index",
-    "my-number": "/component/number/number"
+    "my-number": "/component/number/number",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
   }
 }
