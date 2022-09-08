@@ -72,3 +72,6 @@ open-type 表示跳转的方式 可选 navigate
 <van-button type="info">信息按钮</van-button>
 <van-button type="warning">警告按钮</van-button>
 <van-button type="danger">危险按钮</van-button>
+
+<view>---------------------------------------------------</view>
+<my-number></my-number>

@@ -47,6 +47,7 @@
   "usingComponents": {
     "my-test4": "/component/test4/test4",
     "my-test5": "/component/test5/test5",
-    "van-button": "@vant/weapp/button/index"
+    "van-button": "@vant/weapp/button/index",
+    "my-number": "/component/number/number"
   }
 }
